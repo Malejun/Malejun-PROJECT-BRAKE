@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Proyecto 1 Miguel del Llano</title>
+</head>
+
+<body>
+
+  <main class="dashboard">
+
+    <!-- link -->
+    <section class="card shortcuts-panel">
+
+      <div class="section-header">
+        <div>
+          <p class="section-tag">Accesos rápidos</p>
+          <h2>Guarda tus enlaces</h2>
+        </div>
+
+        <img src="./assets/img/enlace.png" alt="Enlaces">
+      </div>
+
+      <div class="form-box">
+        <input type="text" id="nombreurl" placeholder="Nombre del enlace">
+        <input type="text" id="url" placeholder="https://ejemplo.com">
+
+        <button id="anadirEnlaceBtn" type="button">
+          Añadir enlace
+        </button>
+      </div>
+
+      <ul id="links" class="links-grid"></ul>
+
+    </section>
+
+    <!-- Reloj Tiempo -->
+    <section class="info-column">
+
+      <article class="card clock-card">
+
+        <div id="hora" class="clock-time"></div>
+        <div id="fecha" class="clock-date"></div>
+        <div id="mensajehora" class="clock-date"></div>
+      </article>
+
+      <article class="card weather-card">
+
+        <div class="section-header small">
+          <h2>Clima</h2>
+          <img src="./assets/img/nube.png" alt="Weather">
+        </div>
+
+        <div id="currentWeather"></div>
+
+        <ul id="forecastWeather" class="forecast-list"></ul>
+
+      </article>
+
+    </section>
+
+    <!-- contraseña -->
+    <section class="card password-panel">
+
+      <div class="section-header">
+        <div>
+          <p class="section-tag">Seguridad</p>
+          <h2>Generador de contraseñas</h2>
+        </div>
+
+        <img src="./assets/img/candado.png" alt="Password">
+      </div>
+
+      <div id="generadorpassword" class="password-box">
+
+        <label for="tamaño">
+          Número de caracteres
+        </label>
+
+        <input type="number" id="longitud" min="12" max="50" value="12">
+
+        <button type="button" onclick="generarPassword()">
+          Generar contraseña
+        </button>
+
+        <div id="password" class="password-result"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bottom-nav">
+    <a href="./reloj.html">
+      <img src="./assets/img/reloj.png" alt="Reloj">
+    </a>
+    <a href="./password.html">
+      <img src="./assets/img/candado.png" alt="Candado">
+    </a>
+    <a href="./links.html">
+      <img src="./assets/img/enlace.png" alt="Links">
+    </a>
+    <a href="./tiempo.html">
+      <img src="./assets/img/nube.png" alt="Clima">
+    </a>
+  </footer>
+
+  <script src="./js/tiempo.js"></script>
+  <script src="./js/reloj.js"></script>
+  <script src="./js/password.js"></script>
+  <script src="./js/links.js"></script>
+  <script src="./js/fondo.js"></script>
+
+</body>
+
+</html>
